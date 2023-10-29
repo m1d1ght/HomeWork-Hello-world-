@@ -1,15 +1,48 @@
+print("hello world")
 
-.MODEL SMALL
-.STACK 100h
-.DATA
-    HelloMessage DB 'Hello World',13,10,'$'
-.CODE
-START:
-    mov ax,@data
-    mov ds,ax
-    mov ah,9
-    mov dx,OFFSET HelloMessage
-    int 21h
-    mov ah,4ch
-    int 21h
-END START
+
+
+using System;
+ 
+namespace HelloWorld
+{
+    class Hello 
+    {
+        static void Main() 
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+
+
+
+
+#include <stdio.h>
+
+int main()
+{
+  printf("Hello, World!\n");
+  return 0;
+}
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+
+<!DOCTYPE HTML>
+    <html>
+    
+    <body>
+    
+      <script>
+        alert( 'Hello, world!' );
+      </script>
+    
+    </body>
+
+</html>
